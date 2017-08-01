@@ -49,12 +49,11 @@ li {
 }
 .side-l {
 	left: 0;
-	z-index: 3;
+	z-index: 4;
 }
 .side-r {
 	right: 0;
-	background-color: blue;
-	z-index: 1;
+	z-index: 2;
 }
 .smallCont {
 	width: 100%;
@@ -62,34 +61,47 @@ li {
 	position: relative;
 	transition: all 0.5s ease;
 }
-.cont1, .cont4, .cont7 {
+.cont1, .cont3, .cont5, .cont7, .cont9, .cont11, .cont13 {
 	background-color: red;
 }
-.cont2, .cont5 {
+.cont2, .cont4, .cont6, .cont8, .cont10, .cont12, .cont14 {
 	background-color: orange;
 }
-.cont3, .cont6 {
+.text1, .text3, .text5, .text7, .text9, .text11, .text13 {
 	background-color: yellow;
+}
+.text2, .text4, .text6, .text8, .text10, .text12, .text14 {
+	background-color: purple;
 }
 .textLeft {
 	left: 0;
-	width: 30%;
-	z-index: 4;
+	width: 50%;
+	z-index: 3;
 }
-.text1, .text4, .text7 {
-	background-color: yellow;
-}
-.text2, .text5 {
-	background-color: purple;
-}
-.text3, .text6 {
-	background-color: black;
+.textRight {
+	right: 0;
+	width: 50%;
+	z-index: 1;
 }
 .contButton {
 	position: absolute;
-	top: 20vh;
-	right: 0;
+	left: 50%;
+	top: 50vh;
+	transform: translate(-50%, -50%);
 }
-.moved {
+.moved1 {
 	transform: translate(50px, 0);
+	transition: all .25s ease-in-out;
+}
+.moved2 {
+	transform: translate(100%, 0);
+	transition: all .5s ease;
+}
+.moved3 {
+	transform: translate(-50px, 0);
+	transition: all .25s ease-in-out;
+}
+.moved4 {
+	transform: translate(-100%, 0);
+	transition: all .25s ease;
 }
